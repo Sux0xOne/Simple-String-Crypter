@@ -4,9 +4,9 @@ using System.Security.Cryptography;
 
 try
 {
-    using (FileStream fileStream = new("test.txt", FileMode.OpenOrCreate))
+    using (FileStream fileStream = new("test.txt", FileMode.OpenOrCreate)) //Put the text you want to encrypt in the file named test.txt
     {
-        using (Aes aes = Aes.Create())
+        using (Aes aes = Aes.Create())                  // AES Algorithm
         {
             byte[] key =
             {
